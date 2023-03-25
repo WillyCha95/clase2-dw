@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Crea el siguiente formulario</h2>
+    <form id="formPrograma" enctype="multipart/form-data" method="post">
+        <span>Nombre</span>
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre"><br><br> 
+        <span>Apellido</span>
+        <input id="apellido" name="apellido" type="text" placeholder="Apellido"><br><br>
+        <span>Email</span>
+        <input id="email" name="email" type="email" placeholder="Email"><br><br>
+        <span>Dirección</span>
+        <input id="dirección" name="dirección" type="text" placeholder="Dirección"><br><br>
+        <span>Contraseña</span>
+        <input id="contraseña" name="contraseña" type="password" placeholder="Contraseña"><br><br>
+        <span>Teléfono</span>   
+        <input id="telefóno" name="telefóno" type="text" placeholder="Teléfono"><br><br>
+    </form>
+    <h3>Productos</h3>
+    <form action="página.php" method="post">
+
+        <input type="checkbox" name="Disco500" id="Disco500">
+        <label for="Disco500">Disco duro 500 Gb</label>
+        <br><br>
+        <input type="checkbox" name="Disco2" id="Disco2">
+        <label for="Disco2">Disco duro 2 Tb</label>
+        <br><br>
+        <input type="checkbox" name="Procesador" id="Procesador">
+        <label for="Procesador">Procesador i5</label>
+    <h3>Sexo</h3>
+    <input type="radio" name="sexo" id="varon" value="Varón" checked>
+    <label for="varon">Varón: </label>
+    <br><br>
+    <input type="radio" name="sexo" id="mujer" value="Mujer" checked>
+    <label for="mujer">Mujer: </label>
+    <h3>Compañia</h3>
+    <input type="tel" name="numero" id="numero" checked>
+    <br><br>
+    <span>Mensaje</span>
+    <br><br>
+    <textarea id="mensaje" name="mensaje" placeholder="..:Escriba Aquí:.." rows="5" cols="30"></textarea><br><br>
+    
+    <input type="checkbox" name="condicion" id="condicion">
+        <label for="condicion">Acepto las condiciones establecidas</label>
+        <br><br>
+        <input type="submit" value="Enviar datos">
+    </form>
+</body>
+</html>
